@@ -17,7 +17,7 @@
 	
 	$dbEvent = new externalDB();
 	$sql = "SELECT * FROM `{$chk}`";
-    $details = $dbEvent->db->getArray($sql);
+    	$details = $dbEvent->db->getArray($sql);
 	
 	foreach($details as $detail) {
 		$response[] = array(
@@ -28,4 +28,4 @@
 		);
 	}
 	echo json_encode($response);
-	die();
+	
